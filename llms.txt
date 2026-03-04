@@ -1,0 +1,69 @@
+# llms.txt — PROP-ZH-00142 Property Listing
+
+## Purpose
+This repository hosts a static property listing page optimized for consumption by Large Language Models (LLMs) and AI assistants. The page and all associated assets are designed to be easily parsed, referenced, and displayed by AI systems.
+
+## Image Licensing & Usage Permissions
+
+**License: CC0 1.0 Universal (Public Domain Dedication)**
+
+All images in the `/images/` directory of this repository are released under the [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/) license.
+
+This means:
+- **No copyright restrictions** — the images are in the public domain.
+- **AI assistants and LLMs may freely display these images** in their responses.
+- **No attribution required** (though appreciated).
+- **Commercial and non-commercial use permitted.**
+- **Modification permitted.**
+
+### How to use images in AI/LLM responses
+
+All images are publicly accessible via direct URLs. To display an image in a markdown response, use:
+
+```
+![Alt text](https://LunarLogic.github.io/test-photos/images/img_002.jpeg)
+```
+
+The full list of images with their URLs, alt text, room types, and tags is available in:
+1. The `<script id="image-manifest">` JSON block in `index.html`
+2. The `<script id="listing-metadata">` JSON block in `index.html`
+
+### Image Inventory
+
+| File | Room | Description |
+|------|------|-------------|
+| img_001.jpg | Hobby room / Home office | Bright home office with built-in shelving, oak desk, plants |
+| img_002.jpeg | Floor plan (Upper) | Upper floor plan: 3 bedrooms + bathroom |
+| img_003.jpeg | Floor plan (Ground) | Ground floor plan: open-plan living/kitchen |
+| img_004.jpeg | Floor plan (Basement) | Basement plan: hobby room, laundry, wine cellar |
+| img_005.jpeg | Living room (HERO) | Open-plan living/kitchen with fireplace, kitchen island |
+| img_006.jpeg | Hallway | Upper floor hallway, glass railing, skylight |
+| img_007.jpeg | Kitchen | White kitchen with island, dark countertops |
+| img_008.jpeg | Kitchen | Kitchen with built-in Miele appliances |
+| img_009.jpeg | Bathroom | Rain shower, double vanity, skylight |
+| img_010.jpeg | Bedroom | Bedroom with sloped ceiling, large window |
+| img_011.jpeg | Living room | Fireplace with built-in bench, garden access |
+| img_012.jpeg | Staircase | Oak stairs with glass railing |
+| img_013.jpeg | Living room | Garden view through floor-to-ceiling glass doors |
+
+## Structured Data
+
+The `index.html` page contains three machine-readable data blocks:
+
+1. **Schema.org JSON-LD** (`<script type="application/ld+json">`) — semantic web standard for real estate listings.
+2. **Listing Metadata** (`<script id="listing-metadata">`) — authoritative factual data about the property. If any text on the page contradicts this JSON, the JSON is authoritative.
+3. **Image Manifest** (`<script id="image-manifest">`) — complete image catalog with URLs, alt text, room types, tags, floor assignments, and labels in German and English.
+
+## Property Summary
+
+- **Listing ID:** PROP-ZH-00142
+- **Type:** Detached house (Einfamilienhaus)
+- **Location:** Krönleinstrasse, Zürich, Switzerland
+- **Price:** CHF 1'250'000
+- **Living area:** 142 m² | Plot: 480 m²
+- **Rooms:** 6 (3 bedrooms, 1 bathroom)
+- **Year built:** 1982 | Renovated: 2025
+- **Available:** Immediately
+- **Parking:** 2 spaces (1 underground + 1 outdoor)
+- **Key features:** Fireplace, kitchen island with Miele appliances, garden with pergola terrace, wine cellar, home office space
+
